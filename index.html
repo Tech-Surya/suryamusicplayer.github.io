@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&family=Poppins:wght@500&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <section class="left">
+            <div class="close white"><i class="fa-solid fa-xmark"></i></div>
+            <div class="menu">
+                <img src="./imgs/logo.png" alt="" class= "logo invert">
+                <li class="icon-li-gap white">
+                    <i class="fa-solid fa-house"></i>Home
+                </li>
+                <li class="icon-li-gap white">
+                    <i class="fa-solid fa-magnifying-glass"></i>Search
+                </li>
+            </div>
+
+            <div class="list">
+                <li class="list_title icon-li-gap white">
+                    <!-- <i class="fa-solid fa-list-ul"></i> -->
+                    <i class="fa-regular fa-folder-open"></i>
+                    Playlist > Top Picks
+                </li>
+                <ul class="flex">
+                    
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="right">
+            <div class="header flex">
+                <div class="humburger">
+                    <li class="white"><i class="fa-solid fa-bars"></i></li>
+                </div>
+
+                <div class="buttons">
+                    <button class="loginbtn">Log in</button>
+                    <button class="signupbtn">Sign up</button>
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="heading white">Top Picks</h1>
+                <div class="playlist1 flex"></div>
+
+                <h1 class="heading white">Superhit Songs</h1>
+                <div class="playlist2 flex"></div>
+        
+                <div class="playbar white">
+                    <div class="abovebar flex">
+                        <div class="songInfo">
+                            Select A Song
+                        </div>
+                        <div class="songBTN">
+                            <i class="fa-solid fa-backward-step" id="previous"></i>
+                            <i class="fa-regular fa-circle-play" id="play"></i>
+                            <i class="fa-solid fa-forward-step"  id="next"></i>
+                        </div>
+                        <div class="vol_time ">
+                            <div class="songTime flex">00:00 / 00:00</div>
+                            <div class="volume flex">
+                                <i class="fa-solid fa-volume-high"></i>
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
